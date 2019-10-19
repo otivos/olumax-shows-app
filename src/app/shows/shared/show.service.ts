@@ -5,7 +5,7 @@ import { Subject } from 'rxjs'
 export class ShowService {
   getShows() {
    let subject = new Subject()
-   setTimeout(() => {subject.next(SHOWS); subject.complete;}, 2000)
+   setTimeout(() => {subject.next(SHOWS); subject.complete();}, 2000)
       return subject
   }
   

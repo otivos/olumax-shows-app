@@ -9,7 +9,7 @@ export class ShowsListResolver implements Resolve<any> {
 
     }
     resolve() {
-        return this.showService.getShows().pipe(map(sho => sho))
+        return this.showService.getShows().pipe(map(shows1 => shows1))
     }
     
 }

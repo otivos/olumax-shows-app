@@ -19,7 +19,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ShowsListComponent implements OnInit {
    shows1:any
-   constructor(private showService:ShowService, private toastr:ToastrService, private route:ActivatedRoute) {
+   constructor(private toastr:ToastrService, private route:ActivatedRoute) {
       
    }
 
