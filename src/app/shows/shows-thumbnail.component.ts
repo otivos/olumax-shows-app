@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
     selector: 'show-thumbnail',
     template: `
-        <div class ="well hoverwell thumbnail" >
+        <div [routerLink] = "['/shows', show.id]" class ="well hoverwell thumbnail" >
             <div>
                 <img [src]="show.imageUrl"/>
                 <h3>{{show.title}}</h3>
@@ -13,7 +13,7 @@ import { Component, Input } from '@angular/core';
     `
 })
 
-export class ShowsThumbnailComponent {
+export class ShowsThumbnailComponent { 
     @Input() show:any
 
 }
